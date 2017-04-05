@@ -1,0 +1,3 @@
+yii2环境搭建(ubuntu下nginx+php+mysql+yii2)
+
+http://blog.csdn.net/xiaog351/article/details/47421969
