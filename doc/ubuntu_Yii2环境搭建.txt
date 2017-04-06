@@ -1,3 +1,12 @@
 yii2环境搭建(ubuntu下nginx+php+mysql+yii2)
 
 http://blog.csdn.net/xiaog351/article/details/47421969
+
+
+http://www.yii-china.com/post/detail/206.html
+
+
+https://github.com/yiisoft/yii2/blob/master/docs/guide-zh-CN/start-installation.md
+
+
+http://www.cnblogs.com/weishuan/p/4431413.html
