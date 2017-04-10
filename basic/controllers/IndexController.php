@@ -16,8 +16,10 @@ class IndexController extends Controller
 {
     public function actionIndex()
     {
-        $model = new Test;
-        $data = $model->find()->all();
-        return $this->render("index",array("row"=>$data));
+//        $model = new Test;
+//        $data = $model->find()->all();
+//        $this->layout
+//        return $this->render("index",array("row"=>null));
+        return $this->renderPartial("index",array("row"=>null));
     }
 }
