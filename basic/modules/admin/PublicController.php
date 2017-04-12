@@ -1,5 +1,5 @@
 <?php
-namespace app\modules\controllers;
+namespace app\modules\admin;
 
 use yii\web\Controller;
 use app\modules\models\Admin;
@@ -43,7 +43,4 @@ class PublicController extends Controller
         }
         return $this->render("seekpassword", ['model' => $model]);
     }
-
-
-
 }

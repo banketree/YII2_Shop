@@ -1,9 +1,9 @@
 <?php
 
-namespace app\modules\controllers;
+namespace app\modules\admin;
 
 use yii\web\Controller;
-use app\modules\controllers\CommonController;
+use app\modules\admin\CommonController;
 
 class DefaultController extends CommonController
 {

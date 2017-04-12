@@ -36,7 +36,6 @@ $config = [
                 'port' => '25',
                 'encryption' => 'ssl',
             ],
-
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,

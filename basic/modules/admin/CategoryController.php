@@ -1,9 +1,9 @@
 <?php
 
-namespace app\modules\controllers;
+namespace app\modules\admin;
 use app\models\Category;
 use yii\web\Controller;
-use app\modules\controllers\CommonController;
+use app\modules\admin\CommonController;
 use Yii;
 
 class CategoryController extends CommonController
@@ -64,11 +64,4 @@ class CategoryController extends CommonController
         }
         return $this->redirect(['category/list']);
     }
-
-
-
-
-
-
-
 }

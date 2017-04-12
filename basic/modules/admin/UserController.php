@@ -1,12 +1,12 @@
 <?php
 
-namespace app\modules\controllers;
+namespace app\modules\admin;
 use yii\web\Controller;
 use yii\data\Pagination;
 use app\models\User;
 use app\models\Profile;
 use Yii;
-use app\modules\controllers\CommonController;
+use app\modules\admin\CommonController;
 
 class UserController extends CommonController
 {
@@ -61,5 +61,4 @@ class UserController extends CommonController
         }
         $this->redirect(['user/users']);
     }
-
 }

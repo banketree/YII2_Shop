@@ -22,8 +22,6 @@ class Pay{
             $html = $alipay->requestPay($orderid, $giftname, $amount, $body, $showUrl);
             echo $html;
         }
-
-        
     }
 
     public static function notify($data)
@@ -52,10 +50,4 @@ class Pay{
             return false;
         }
     }
-
-
-
-
-
-
 }

@@ -4,7 +4,7 @@ namespace app\modules;
 
 class admin extends \yii\base\Module
 {
-    public $controllerNamespace = 'app\modules\controllers';
+    public $controllerNamespace = 'app\modules\admin';
 
     public function init()
     {

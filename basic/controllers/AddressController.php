@@ -42,14 +42,4 @@ class AddressController extends CommonController
         Address::deleteAll('addressid = :aid', [':aid' => $addressid]);
         return $this->redirect($_SERVER['HTTP_REFERER']);
     }
-
-
-
-
-
-
-
-
-
-
 }

@@ -1,13 +1,13 @@
 <?php
 
-namespace app\modules\controllers;
+namespace app\modules\admin;
 use app\models\Category;
 use app\models\Product;
 use yii\web\Controller;
 use Yii;
 use yii\data\Pagination;
 use crazyfd\qiniu\Qiniu;
-use app\modules\controllers\CommonController;
+use app\modules\admin\CommonController;
 
 class ProductController extends CommonController
 {
@@ -44,7 +44,6 @@ class ProductController extends CommonController
             } else {
                 Yii::$app->session->setFlash('info', '添加失败');
             }
-
         }
 
         return $this->render("add", ['opts' => $list, 'model' => $model]);
@@ -110,7 +109,6 @@ class ProductController extends CommonController
 
         }
         return $this->render('add', ['model' => $model, 'opts' => $list]);
-
     }
 
     public function actionRemovepic()
@@ -154,13 +152,4 @@ class ProductController extends CommonController
         Product::updateAll(['ison' => '0'], 'productid = :pid', [':pid' => $productid]);
         return $this->redirect(['product/list']);
     }
-
-
-
-
-
-
-
-
-
 }

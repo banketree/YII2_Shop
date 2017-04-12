@@ -94,7 +94,6 @@ class Admin extends ActiveRecord
             }
         }
         return false;
-    
     }
 
     public function createToken($adminuser, $time)
@@ -132,7 +131,4 @@ class Admin extends ActiveRecord
         }
         return false;
     }
-
-
-
 }

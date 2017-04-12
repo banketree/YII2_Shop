@@ -1,6 +1,6 @@
 <?php
 
-namespace app\modules\controllers;
+namespace app\modules\admin;
 use app\models\Order;
 use app\models\OrderDetail;
 use app\models\Product;
@@ -9,7 +9,7 @@ use app\models\Address;
 use yii\web\Controller;
 use yii\data\Pagination;
 use Yii;
-use app\modules\controllers\CommonController;
+use app\modules\admin\CommonController;
 
 class OrderController extends CommonController
 {
@@ -49,7 +49,6 @@ class OrderController extends CommonController
         }
         return $this->render('send', ['model' => $model]);
     }
-
 }
 
 

@@ -1,12 +1,12 @@
 <?php
 
-namespace app\modules\controllers;
+namespace app\modules\admin;
 
 use yii\web\Controller;
 use Yii;
 use app\modules\models\Admin;
 use yii\data\Pagination;
-use app\modules\controllers\CommonController;
+use app\modules\admin\CommonController;
 
 class ManageController extends CommonController
 {
@@ -22,10 +22,12 @@ class ManageController extends CommonController
             $this->redirect(['public/login']);
             Yii::$app->end();
         }
+
         if (time() - $time > 300) {
             $this->redirect(['public/login']);
             Yii::$app->end();
         }
+
         if (Yii::$app->request->isPost) {
             $post = Yii::$app->request->post();
             if ($model->changePass($post)) {
@@ -34,7 +36,6 @@ class ManageController extends CommonController
         }
         $model->adminuser = $adminuser;
         return $this->render("mailchangepass", ['model' => $model]);
-
     }
 
     public function actionManagers()
@@ -103,11 +104,9 @@ class ManageController extends CommonController
                 Yii::$app->session->setFlash('info', '修改成功');
             }
         }
+
         $model->adminpass = '';
         $model->repass = '';
         return $this->render('changepass', ['model' => $model]);
     }
-
-
-
 }
